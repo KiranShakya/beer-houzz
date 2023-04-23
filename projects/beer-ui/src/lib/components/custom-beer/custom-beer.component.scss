@@ -1,0 +1,9 @@
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+.custom-beer-image {
+  max-height: 150px;
+  object-fit: contain;
+  padding-bottom: 10px;
+}

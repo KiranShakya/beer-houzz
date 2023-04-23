@@ -1,0 +1,14 @@
+<mat-grid-list [cols]="totalCols" rowHeight="300px">
+  <ng-container *ngFor="let beer of beers">
+    <mat-grid-tile><ui-card [beer]="beer"></ui-card></mat-grid-tile>
+  </ng-container>
+</mat-grid-list>
+<button
+  class="load-more"
+  *ngIf="!reachedEnd"
+  mat-button
+  color="primary"
+  (click)="loadMore()"
+>
+  Load More
+</button>

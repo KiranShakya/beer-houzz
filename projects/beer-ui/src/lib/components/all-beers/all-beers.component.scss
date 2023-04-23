@@ -1,0 +1,8 @@
+.load-more {
+  width: 100%;
+  padding: 30px;
+}
+:host {
+  height: calc(100vh - 90px);
+  display: block;
+}

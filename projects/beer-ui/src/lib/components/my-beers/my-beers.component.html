@@ -1,0 +1,28 @@
+<div class="add-beer-btn-container">
+  <button
+    mat-raised-button
+    color="primary"
+    class="add-beer-btn"
+    (click)="addBeer()"
+  >
+    Add a new beer
+  </button>
+</div>
+<article class="empty" *ngIf="!customBeers.length; else customBeersTemplate">
+  <p>Nothing to see yet.</p>
+  <span
+    ><button class="fake-link" mat-button color="primary" (click)="addBeer()">
+      Click here
+    </button>
+    to add your first beer!</span
+  >
+</article>
+<ng-template #customBeersTemplate>
+  <article>
+    <mat-grid-list [cols]="totalCols" rowHeight="300px">
+      <ng-container *ngFor="let beer of customBeers">
+        <mat-grid-tile><ui-card [beer]="beer"></ui-card></mat-grid-tile>
+      </ng-container>
+    </mat-grid-list>
+  </article>
+</ng-template>

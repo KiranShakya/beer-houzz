@@ -1,0 +1,14 @@
+.beer-image {
+  object-fit: contain;
+  height: 400px;
+  min-width: 230px;
+  max-width: 230px;
+  float: left;
+}
+.ingredients-table {
+  float: right;
+  width: calc(100% - 230px);
+}
+.description {
+  text-align: justify;
+}

@@ -1,0 +1,26 @@
+:host {
+  height: calc(100vh - 90px);
+  display: block;
+}
+.add-beer-btn-container {
+  position: relative;
+  float: right;
+  width: 152px;
+  .add-beer-btn {
+    position: fixed;
+    z-index: 2;
+  }  
+}
+.empty {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: calc(100vh - 90px);
+}
+.fake-link {
+  padding: 0;
+  display: inline;
+  top: -2px;
+}
