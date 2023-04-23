@@ -18,6 +18,7 @@ import { IngredientDetailsPipe } from './components/detail-dialog/pipes/ingredie
 import { CustomBeerComponent } from './components/custom-beer/custom-beer.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { CustomBeerService } from './services/custom-beer.service';
+import { JoinPipe } from './components/detail-dialog/pipes/join.pipe';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { CustomBeerService } from './services/custom-beer.service';
     MyBeersComponent,
     DetailDialogComponent,
     IngredientDetailsPipe,
+    JoinPipe,
     CustomBeerComponent,
   ],
   imports: [

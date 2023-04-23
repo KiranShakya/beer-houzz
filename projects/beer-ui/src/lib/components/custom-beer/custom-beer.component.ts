@@ -15,7 +15,7 @@ export class CustomBeerComponent {
   public customBeer = new FormGroup({
     name: new FormControl('', [
       Validators.required,
-      Validators.maxLength(24),
+      Validators.maxLength(28),
     ]) as FormControl<string>,
     genre: new FormControl('', [
       Validators.required,
